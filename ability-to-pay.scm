@@ -5,12 +5,21 @@
 ;;
 ;; Heavily modified and Frankensteined by David Montenegro 
 ;;   2004.06.12-2004.06.23 <sunrise2000@comcast.net>
-;;  
+;;
 ;;  * Removed from-date & Net Profit from the report.
 ;;  
 ;;  * Updated to use the new gnc:html-acct-table utility object.
 ;;    Added *lots* of new options.  The report can now probably
 ;;    be coerced into the form that *you* want. <grin>
+;;
+;; Modified again by Jamin Hitchcock
+;;   2017.04.03
+;;  
+;;	* Add Total assets minus Total liabilities. This is used to for personal finance to make sure
+;;	  short term liabilities is not greater than the balance of the account used to pay those liabilities.
+;;	  For example the report may be configured to include a main checking account for the asset account, and
+;;	  credit cards accounts and a "Checks Outstanding" account for the liabilities accounts. The total assets
+;;	  minus total liabilities amount would show how much money is left to safely spend.
 ;;  
 ;;  * BUGS:
 ;;    
